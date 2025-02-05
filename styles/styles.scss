@@ -298,12 +298,17 @@ section {
                         transition: all .4s ease-in-out;
                         width: 60%;
                     }
+                    .Gp { width: 85%; }
+                    .collaboration { width: 90%; }
+                    .Gt { width: 80%; }
+                    .Aa{ width: 900%; }
+
                     .html { width: 80%; }
-                    .css { width: 95%; }
-                    .js { width: 75%; }
+                    .css { width: 65%; }
+                    .js { width: 70%; }
                     .react{ width: 60%; }
                     .node{ width: 87%; }
-                    .python{ width: 70%; }
+                    .python{ width: 68%; }
                 }
             }
         }
@@ -669,3 +674,6 @@ section {
 }
 
 @import './media';
+
+
+

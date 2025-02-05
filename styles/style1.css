@@ -1,0 +1,68 @@
+/* =======================
+   BOUTON DE LANGUE 
+   ======================= */
+.lang-btn {
+  position: fixed;
+  /* On le place un peu plus bas que .theme-btn (qui est à top: 3%) */
+  top: calc(5% + 80px); /* Par exemple, 80px en dessous du bouton theme */
+  right: 3%;
+
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+.lang-btn:active {
+  transform: translateY(-3px);
+}
+
+.lang-btn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+/* =======================
+   MEDIA QUERIES
+   ======================= */
+
+/* 
+   Même logique que pour .theme-btn : 
+   en dessous de 600px, on réduit la taille,
+   et on adapte le positionnement si besoin
+*/
+@media screen and (max-width: 600px) {
+  .lang-btn {
+    width: 50px;
+    height: 50px;
+    /* On réduit également l’écart par rapport à .theme-btn */
+    top: calc(3% + 60px);
+  }
+}
+
+/* 
+   Si tu veux appliquer un style spécifique
+   à partir de 1432px (ou moins),
+   tu peux reprendre la même structure que tes autres media queries
+   et ajuster seulement si nécessaire.
+*/
+@media screen and (max-width: 1432px) {
+  /* Par exemple, si tu souhaites changer le padding
+     ou modifier encore la position du bouton lang */
+  /* .lang-btn {
+       top: calc(3% + 90px);
+  } */
+}
+
+
+
